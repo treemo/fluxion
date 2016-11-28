@@ -1,0 +1,7 @@
+.git/
+.github/
+logos/
+Sites/
+.gitignore
+arch-install
+Dockerfile
