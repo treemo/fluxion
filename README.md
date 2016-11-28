@@ -23,6 +23,18 @@ The mac address of the fake access points differs by one octet from the original
 ###"The redirection doesn't work for HTTPS websites"
 HTTPS is not currently supported.
 
+## Use docker
+```
+docker run \
+  -it \
+  --rm \
+  -e DISPLAY \
+  -v /tmp/.X11-unix:/tmp/.X11-unix:ro \
+  --privileged \
+  --net=host \
+  --name=fluxion treemo/fluxion
+```
+
 ## Updates
 If you want new features create a issue report and label it enhancement. Or start a pull request. I don't have enough time to daily change fluxion.
 
